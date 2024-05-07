@@ -1,0 +1,746 @@
+/*
+    Dan Blais, Imed Eddine Cherabi, Prince Apau
+    CST8285
+    Assignment 2
+    Due Apr 07, 2024
+*/
+/*
+    Styles.css
+    This css file contains the style rules used by all pages in this website. It also
+    contains an import of the Google font "Lobster". Responsive media queries are also
+    included, allowing the website to function on screens of different sizes.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+}
+
+#about, #recent-products {
+    align-items: center;
+    background-color: #121212;
+    border: 1px solid #BDED10;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 12vw 0 12vw;
+}
+
+#about-header {
+    font-size: 12pt;
+}
+
+#about-paragraph {
+    margin: 0 2rem 1rem 2rem;
+    text-indent: 2rem;
+}
+
+.account-category {
+    color: white;
+    font-size: 16px;
+    margin: 0 1rem 0 0;
+}
+
+#account-container {
+    background-color: #121212;
+    border: 1px solid #BDED10;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 10vh 10vw 10.5vh 10vw;
+}
+
+#account-details-container {
+    background-color: #121212;
+    border: 1px solid #121212;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+    width: 62vw;
+}
+
+#account-header {
+    font-size: 18px;
+}
+
+.account-item {
+    color: #50C878;
+    font-size: 16px;
+    margin: 2rem 0 0 0;
+}
+
+#account-nav {
+    align-items: left;
+    background-color: black;
+    border: 1px solid black;
+    border-right: 0.25px solid #BDED10;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem 0 0;
+    width: 12rem;
+}
+
+.account-nav-item {
+    color: #66B2B2;
+    font-size: 16px;
+    margin: 2rem 0 0 2rem;
+    text-decoration: none;
+}
+
+.account-nav-item:hover {
+    color: #50C878;
+}
+
+#addressfield, #emailfield, #namefield, #passfield, #pass2field, #postalfield {
+    height: 2rem;
+    width: 50vw;
+}
+
+#address-label, #city-label, #email-label, #name-label, #pass-label, #pass2-label, #postal-label, #province-label {
+    color: #898989;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.add-products-button {
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 2rem;
+    width: 10vw;
+}
+
+#all-products {
+    background-color: #121212;
+    border: 1px solid #BDED10;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 12.5vw 2rem 12.5vw;
+}
+
+#all-products-holder {
+    background-color: #202020;
+    border: 2px solid #121212;
+    border-radius: 10px;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 1rem 0 1rem 0;
+}
+
+body {
+    background-image: url("../web/login-background.jpg");
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#cart-button-container {
+    align-items: center;
+    gap: 17rem;
+    justify-content: center;
+    background-color: #121212;
+    display: flex;
+    padding: 1rem 1rem 0 0;
+}
+
+#cart-container {
+    align-items: center;
+    background-color: #121212;
+    border: 1px solid #BDED10;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 12vw 2rem 12vw;
+}
+
+.cart-image {
+    border: 1px solid rgb(30, 30, 30);
+    height: 20vh;
+    width: 10vw;
+}
+
+#cart-table {
+    border: 1px solid #121212;
+    border-spacing: 0 2px;
+    display: block;
+    height: 60vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#cityfield {
+    margin: 0 0.5rem 0 0;
+}
+
+#cityfield {
+    height: 2rem;
+    width: 25vw;
+}
+
+#city-label, #province-label {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+#contact {
+    align-items: center;
+    background-color: #121212;
+    border: 1px solid #BDED10;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 20vw 5rem 20vw;
+}
+
+.contact-emails, #delete-account-link {
+    color: #66B2B2;
+    text-decoration: none;
+}
+
+.contact-emails:hover, #delete-account-link:hover {
+    color: #50C878;
+}
+
+#contact-paragraph {
+    margin: 0 3rem 0 3rem;
+}
+
+.contact-subheaders {
+    margin: 2rem 0 0.5rem 0;
+}
+
+#create-account-button, #create-button, #login-button {
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 2rem;
+    margin: 0 0 1rem 0;
+    width: 20vw;
+}
+
+#create-account-button:hover, #create-button:hover, #login-button:hover, .add-products-button:hover, .delete-button:hover, .decrease-button:hover, .increase-button:hover {
+    background-color: rgba(255, 165, 0, 0.6);
+}
+
+#create-button {
+    margin: 0 0 0 17vw;
+}
+
+.data-item, .header-item {
+    padding: 1rem;
+    text-align: center;
+    width: 10vw;
+}
+
+#delete-account-link {
+    margin: 0 0 0 23vw;
+}
+
+.delete-button {
+    background-color: orange;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 2rem;
+    margin: 0.5rem 0 1rem 0;
+    width: 6rem;
+}
+
+#email-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2rem 0;
+}
+
+#filter-products-field {
+    height: 2rem;
+    margin: 0 0 0 0.5rem;
+    width: 10rem;
+}
+
+#filter-products-field:focus {
+    border: 2px solid #50C878;
+    border-radius: 2px;
+    outline: 0;
+}
+
+footer {
+    background: linear-gradient(to top, rgba(50, 50, 50) 0%, rgba(0, 0, 0) 100%);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    align-items: center;
+    display: flex;
+    margin: 1rem 0 0 5.5rem;
+}
+
+.header {
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(50, 50, 50) 0%, rgba(0, 0, 0) 100%);
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0rem;
+    width: 100vw;
+    z-index: 1;
+}
+
+#header-text {
+    font-family: "Lobster", sans-serif;
+    font-size: 18pt;
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+}
+
+.last-updated {
+    margin: 0 0 0.5rem 83vw;
+}
+
+.logo-text {
+    color: white;
+    display: none;
+    font-family: "Lobster", sans-serif;
+}
+
+#login-button {
+    margin: 1rem 0 0 15vw;
+}
+
+#login-container, #create-account-container {
+    align-items: center;
+    background-color: #121212;
+    border: 2px solid #BDED10;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 12vh 20vw 15vh 20vw;
+}
+
+#create-account-container {
+    margin: 5vh 20vw 5vh 20vw;
+}
+
+#login-divider {
+    background-color: white;
+    height: 0.5px;
+    margin: 1rem 0 1rem 0;
+    width: 54vw;
+}
+
+.login-error {
+    background-color: #121212;
+    color: red;
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+#login-form, #create-account-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0.5rem 0;
+}
+
+#namefielddiv, #emailfielddiv, #passfielddiv, #pass2fielddiv, #addressfielddiv, #cityfielddiv, #postalfielddiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: black;
+    height: 100vh;
+    position: fixed;
+    transition: width 100ms ease;
+    width: 8.5vw;
+    z-index: 2;
+}
+
+.navbar:hover {
+    width: 23vw;
+}
+
+.navbar:hover #nav-divider {
+    width: 22vw;
+}
+
+.navbar:hover .navbar-text, .navbar:hover .logo-text {
+    display: block;
+}
+
+#nav-divider {
+    background-color: white;
+    height: 1px;
+    margin: 0 0 1.5rem 0;
+    width: 7.5vw;
+}
+
+.navbar-group {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: right;
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem 0 0;
+}
+
+.navbar-logo, .navbar-opt {
+    align-items: center;
+    display: flex;
+    margin: 0.5rem 0 0 0;
+}
+
+.navbar-link, .logo-link {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0.5rem;
+    text-decoration: none;
+}
+
+.navbar-link svg, .navbar-logo svg, .footer-logo svg {
+    padding: 0 1rem 0 1rem;
+    height: auto;
+    width: 3rem;
+}
+
+.navbar-link:hover .navbar-text, .logo-link:hover .logo-text {
+    color: #50C878;
+}
+
+.navbar-link:hover svg, .logo-link:hover svg, #shopping-cart-link:hover svg {
+    fill: #50C878;
+}
+
+/*[1]*/
+.navbar-text {
+    color: #00FFFF;
+    display: none;
+}
+
+#no-account-dialogue {
+    margin: 0 0 1rem 0;
+}
+
+#postalfield {
+    width: 25vw;
+}
+
+#products-header, #recently-added-header, #contact-header {
+    font-size: 14pt;
+    margin: 1rem auto 2rem auto;
+}
+
+.product-category {
+    display: none;
+}
+
+#provincefield {
+    height: 2.4rem;
+    width: 25.8vw;
+}
+
+#quantity {
+    width: 2rem;
+}
+
+.quantity-field {
+    height: 1rem;
+    margin: 0 0.1rem 0 0.1rem;
+    width: 2rem;
+}
+
+.quantity-field:focus {
+    border: 2px solid #50C878;
+    border-radius: 2px;
+    outline: 0;
+}
+
+#recent-products {
+    margin: 1rem 12vw 2rem 12vw;
+}
+
+#recent-products-holder, #all-products-holder {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.recent-products-image, .products-image {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 35vh;
+    margin: 0.5rem 0 0 0;
+    width: 15vw;
+}
+
+.recent-products-name, .products-name {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.recent-products-price, .products-price {
+    margin: 0 0 0.5rem 0;
+}
+
+.recently-added-container, .product-container {
+    align-items: center;
+    background-color: black;
+    border: 1px solid #66B2B2;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 52vh;
+    width: 20vw;
+}
+
+#search-filter {
+    align-items: center;
+    display: flex;
+    margin: 0 0 0.5rem 1rem;
+}
+
+#search-products-field {
+    height: 1.5rem;
+    margin: 0 1rem 0 0;
+    width: 20rem;
+}
+
+#search-products-field:focus {
+    border: 2px solid #50C878;
+    border-radius: 2px;
+    outline: 0;
+}
+
+#shopping-cart-link {
+    margin: 0 2rem 0 37vw;
+}
+
+#shopping-cart-link svg {
+    height: auto;
+    width: 2rem;
+}
+
+#spacer {
+    padding: 7.5rem 0 0 0;
+}
+
+#table-container {
+    background-color: #202020;
+    border: 1px solid #121212;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.table-data {
+    background-color: rgb(50, 50, 50);
+}
+
+.table-data:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+#table-empty {
+    background-color: #202020;
+    height: 10rem;
+}
+
+#table-header {
+    background-color: #202020;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+#termsfield {
+    margin: 1rem 0 0 0;
+}
+
+#total-price {
+    padding: 0 0 0 54vw;
+}
+
+#total-products {
+    margin: 0 0 0 6rem;
+}
+
+.update-div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 1rem;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121212;
+    border-left: 1px solid rgb(30, 30, 30);
+}
+
+::-webkit-scrollbar-track:horizontal {
+    background-color: #121212;
+    border-top: 1px solid rgb(30, 30, 30);
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: #66B2B2;
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background-clip: content-box;
+    background-color: #66B2B2;
+    border-top: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #50C878;
+}
+
+/*Small Devices*/
+@media only screen and (min-width: 600px) {
+    * {
+        font-size: 10px;
+    }
+
+    .logo-text {
+        font-size: 12px;
+    }
+
+    .navbar {
+        width: 9vw;
+    }
+
+    .navbar:hover {
+        width: 27vw;
+    }
+
+    .navbar:hover #nav-divider {
+        width: 26vw;
+    }
+
+    #nav-divider {
+        width: 8vw;
+    }
+
+    .navbar-text {
+        font-size: 10px;
+    }
+
+    #spacer {
+        padding: 7rem 0 0 0;
+    }
+}
+
+/* Medium Devices*/
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 12px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .navbar {
+        width: 8.5vw;
+    }
+
+    .navbar:hover {
+        width: 24vw;
+    }
+
+    .navbar:hover #nav-divider {
+        width: 23vw;
+    }
+
+    #nav-divider {
+        width: 7.5vw;
+    }
+
+    .navbar-text {
+        font-size: 12px;
+    }
+
+    #spacer {
+        padding: 6.5rem 0 0 0;
+    }
+}
+
+/*Large Devices*/
+@media only screen and (min-width: 992px) {
+    * {
+        font-size: 14px;
+    }
+
+    #about {
+        margin: 0 15vw 0 15vw;
+    }
+
+    #all-products {
+        margin: 0 13.5vw 2rem 13.5vw;
+    }
+
+    #cart-container {
+        margin: 1rem 15vw 2rem 15vw;
+    }
+
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .navbar {
+        width: 7vw;
+    }
+
+    .navbar:hover {
+        width: 20vw;
+    }
+
+    .navbar:hover #nav-divider {
+        width: 19vw;
+    }
+
+    #nav-divider {
+        width: 6vw;
+    }
+
+    .navbar-text {
+        font-size: 14px;
+    }
+
+    #recent-products {
+        margin: 1rem 15vw 2rem 15vw;
+    }
+
+    #spacer {
+        padding: 6rem 0 0 0;
+    }
+    
+}
